@@ -75,6 +75,7 @@ class App(ctk.CTk):
 
         view = HomeView(
             self.container,
+            controller=self.controller,
             on_assistant=self._show_assistant,
             on_quiz=self._show_quiz,
         )

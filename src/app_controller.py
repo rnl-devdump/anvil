@@ -29,10 +29,17 @@ class AppController:
 
         self.chat_history: list[dict] = []
 
+        self.pdf_engine: str = "pymupdf"
+
+
+    def set_pdf_engine(self, engine: str) -> None:
+
+        self.pdf_engine = engine
+
 
     def load_file_path(self, filepath: str) -> None:
 
-        self.file = File(filepath)
+        self.file = File(filepath, pdf_engine=self.pdf_engine)
 
         self._load_and_embed()
 
@@ -65,7 +72,7 @@ class AppController:
 
             raise ValueError("Pasted text is empty.")
 
-        self.file = File(filepath="NO_FILEPATH", raw_text=cleaned)
+        self.file = File(filepath="NO_FILEPATH", raw_text=cleaned, pdf_engine=self.pdf_engine)
 
         self._load_and_embed()
 

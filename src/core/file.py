@@ -9,9 +9,11 @@ from src.core.config import CHARS_PER_TOKEN, CHUNK_TARGET_TOKENS
 
 class File:
 
-    def __init__(self, filepath: str, raw_text: str | None = None):
+    def __init__(self, filepath: str, raw_text: str | None = None, pdf_engine: str = "pymupdf"):
 
         self.filepath = filepath
+
+        self.pdf_engine = pdf_engine
 
         self.filetype = self._filetype(filepath)
 
@@ -144,6 +146,17 @@ class File:
     def parse_file(self) -> None:
 
         if self.filetype == "pdf":
+
+            if self.pdf_engine in ("docling", "marker"):
+                from src.core.pdf_processor import RobustPDFProcessor
+                try:
+                    processor = RobustPDFProcessor(max_tokens=CHUNK_TARGET_TOKENS)
+                    result = processor.process(self.filepath, engine=self.pdf_engine)
+                    if result and result.get("chunks"):
+                        self._all_chunks = [(1, chunk["text"]) for chunk in result["chunks"]]
+                        return
+                except Exception as e:
+                    print(f"Failed to use {self.pdf_engine} parser, falling back to PyMuPDF. Error: {e}")
 
             self.read_pdf()
 
