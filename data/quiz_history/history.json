@@ -1,0 +1,227 @@
+[
+  {
+    "id": "8ee9e6550bd4",
+    "title": "DC1 - study guide 3.pdf (10 Q)",
+    "source": "DC1 - study guide 3.pdf",
+    "created_at": "2026-07-27T14:04:47.717437+00:00",
+    "question_count": 10,
+    "questions": [
+      {
+        "type": "MULTIPLE_CHOICE",
+        "question": "In Python, what does square brackets ([ ]) indicate?",
+        "choices": [
+          "A variable",
+          "An error message",
+          "A list",
+          "A function"
+        ],
+        "answer": "A list"
+      },
+      {
+        "type": "PARAGRAPH",
+        "question": "How can you access an element in a Python list by its index? Provide the example given.",
+        "answer": "To access an element in a list, write the name of the list followed by the index of the item enclosed in square brackets. Example: bicycles = ['trek', 'cannondale', 'redline', 'specialized'] print(bicycles[0])"
+      },
+      {
+        "type": "MULTIPLE_CHOICE",
+        "question": "In the list bicycles = ['trek', 'cannondale', 'redline', 'specialized'], what is printed by bikes[1]?",
+        "choices": [
+          "'trek'",
+          "'cannondale'",
+          "'redline'",
+          "'specialized'"
+        ],
+        "answer": "'cannondale'"
+      },
+      {
+        "type": "IDENTIFICATION",
+        "question": "In the list bicycles = ['trek', 'cannondale', 'redline', 'specialized'], what is printed by bikes[1]?",
+        "answer": "'cannondale'"
+      },
+      {
+        "type": "PARAGRAPH",
+        "question": "What does the sorted() function do in Python?",
+        "answer": "The sorted() function returns a modified copy of the list while leaving the original list untouched."
+      },
+      {
+        "type": "MULTIPLE_CHOICE",
+        "question": "What is PANGASINAN State University?",
+        "choices": [
+          "A public university in the Philippines.",
+          "An independent college located outside of Metro Manila, Philippines.",
+          "The largest private school in Asia.",
+          "A government-funded institution for higher education."
+        ],
+        "answer": "An independent college located outside of Metro Manila, Philippines."
+      },
+      {
+        "type": "MULTIPLE_CHOICE",
+        "question": "Which built-in function returns the number of elements in a tuple?",
+        "choices": [
+          "len() - Returns the sum of numbers.",
+          "sum() - Sorts items as list copy.",
+          "sorted() - Unchanged original tuple.",
+          "None of the above."
+        ],
+        "answer": "len()"
+      },
+      {
+        "type": "PARAGRAPH",
+        "question": "Describe how slicing works in Python with tuples and provide an example using a Colors tuple that includes 'v', 'i', 'b', 'g', 'y', 'o', 'r'.",
+        "answer": "Slicing of tuples is allowed by specifying start, stop, and optional step indices along with the colon (:) operator. For instance, given a Colors tuple ('v','i','b','g','y','o','r'), colors[:5] would return ('v', 'i', 'b', 'g', 'y') as it includes elements from index 0 to one less than stop index value."
+      },
+      {
+        "type": "MULTIPLE_CHOICE",
+        "question": "Which function checks if all keys are True?",
+        "choices": [
+          "all() returns Boolean False value.",
+          "any() returns Boolean True value if any key is True.",
+          "sorted() sorts the dictionary based on its values.",
+          "fromkeys() creates a new dictionary from given sequence."
+        ],
+        "answer": "The all() function checks if all keys are True and it returns Boolean True value otherwise False."
+      },
+      {
+        "type": "IDENTIFICATION",
+        "question": "What does the get() method return in Python's dict?",
+        "answer": "It returns the value associated with a specified key, or default value if provided."
+      }
+    ]
+  },
+  {
+    "id": "b49667fd6f63",
+    "title": "DC1 - study guide 1.pdf (18 Q)",
+    "source": "DC1 - study guide 1.pdf",
+    "created_at": "2026-07-27T14:14:15.602127+00:00",
+    "question_count": 18,
+    "questions": [
+      {
+        "type": "TRUE_FALSE",
+        "question": "Can an identifier start with a digit?",
+        "answer": true
+      },
+      {
+        "type": "MATCHING",
+        "question": "Match the following statements to their correctness regarding Python identifiers and keywords:",
+        "pairs": [
+          {
+            "premise": "Identifiers can be a combination of letters in lowercase or uppercase, digits, and underscores.",
+            "response": "True"
+          },
+          {
+            "premise": "Keywords cannot be used as identifiers for variables, functions, constants, etc.",
+            "response": "True"
+          },
+          {
+            "premise": "Spaces are allowed within an identifier name in Python.",
+            "response": "False"
+          }
+        ]
+      },
+      {
+        "type": "ENUMERATION",
+        "question": "Where is Pangasinan State University located?",
+        "answer": [
+          "Pangasinan State University",
+          "Philippines"
+        ]
+      },
+      {
+        "type": "ENUMERATION",
+        "question": "Can variables store different types of values like integers, floats and strings simultaneously?",
+        "answer": [
+          "Variables can hold any type of data in Python."
+        ]
+      },
+      {
+        "type": "TRUE_FALSE",
+        "question": "Is addition an operation that adds two operands to produce their sum?",
+        "answer": true
+      },
+      {
+        "type": "ENUMERATION",
+        "question": "List the four basic arithmetic operations mentioned in the text.",
+        "answer": [
+          "Addition",
+          "Subtraction",
+          "Multiplication",
+          "Division"
+        ]
+      },
+      {
+        "type": "TRUE_FALSE",
+        "question": "Assignment operators always work from left to right.",
+        "answer": false
+      },
+      {
+        "type": "ENUMERATION",
+        "question": "Which are the simple assignment and compound addition assignment operators?",
+        "answer": [
+          "=",
+          "+="
+        ]
+      },
+      {
+        "type": "TRUE_FALSE",
+        "question": "= z = z // p equivalent assignment",
+        "answer": false
+      },
+      {
+        "type": "TRUE_FALSE",
+        "question": "z %= p is equivalent to an assignment where the left operand stores the remainder after division.",
+        "answer": true
+      },
+      {
+        "type": "TRUE_FALSE",
+        "question": "The Logical AND operator returns True when both operands are False.",
+        "answer": false
+      },
+      {
+        "type": "ENUMERATION",
+        "question": "Which operators reverse the operand state and perform bit by bit operation respectively?",
+        "answer": [
+          "Logical OR",
+          "Bitwise NOT"
+        ]
+      },
+      {
+        "type": "ENUMERATION",
+        "question": "List the basic data types in Python.",
+        "answer": [
+          "Numbers",
+          "Boolean",
+          "Strings",
+          "None"
+        ]
+      },
+      {
+        "type": "IDENTIFICATION",
+        "question": "Which university is associated with this text chunk?",
+        "answer": "Pangasinan State University"
+      },
+      {
+        "type": "TRUE_FALSE",
+        "question": "An Identifier in DC1 – Computational Science must begin with a number.",
+        "answer": false
+      },
+      {
+        "type": "TRUE_FALSE",
+        "question": "Arithmetic operators are used to execute arithmetic operations such as addition, subtraction, division, and multiplication.",
+        "answer": true
+      },
+      {
+        "type": "TRUE_FALSE",
+        "question": "Who is the author of 'Python Crash Course A Hands-on, Project based Introduction to Programming' published in Chapter 2 by Pangasinan State University?",
+        "answer": true
+      },
+      {
+        "type": "ENUMERATION",
+        "question": "List two authors associated with Python programming.",
+        "answer": [
+          "Matthes",
+          "Eric"
+        ]
+      }
+    ]
+  }
+]
